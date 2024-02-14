@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/de3ab45b3e.js" crossorigin="anonymous"></script>
+</head>
+<body class="light-mode"> 
+<div id="header">
+    <div class="container">
+        <nav>
+            <h2 class="logo"> Abhi<span>S</span></h2> 
+            <ul id="sidemenu">
+            <li><a href="#header">home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#Portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            <img src="./All_Svg/moon.svg" id="icon" class="moon"/>
+        </ul>   
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        
+        </nav>
+        <div class="header-text ">
+            <div class="wrapper">
+             
+                <h1 class="static-text">I'm a <span></span><h1>
+                    
+            </div>
+          <img src="./images/back.jpg" alt=""class="image">
+       </div>
+         
+    </div>
+</div>
+<!----------About-------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1"> 
+                <h1 class="first-subtitle" id="sub-title-1">About me</h1>
+                <video controls id="vid">
+                    <source src="about.mp4" type="video/mp4">
+                  </video>
+            </div>
+            <div class="about-col2">
+                <h1 class="sub-title" id="sub-title-2">About me</h1>
+                <p class="para">
+                    Hey!!! I am a full-stack web developer, specializing in creative very unique and responsive websites.
+                    In addition to this I have the knowledge of many other programming languages and Data Structures and Algorithm,
+                    I believe in developing a well-round personality,learning and exploring new areas and things in field of technology.
+                </p>
+                <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('Education')">Education</p>
+            
+                </div>
+                <div class="tab-contents active-tab" id="Experience">
+                    <ul>
+                        <li> <span>Web developer Intern</span><br>@RadicalX</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li> <span>Btech In Computer Science</span><br> Joginpally B R Engineering College</li>
+                        <li> <span>Senior Secondary Education </span> <br>Kendriya Vidyalaya</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!------------------------------Skills---------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title head-skill">Skills</h1>
+        
+       <div class="services-list">
+        <div class="first-skill">
+             <h2> Programming languages</h2>
+            
+             <div class="skill-container">  
+               <img src="./All_Svg/c.svg" alt="C++-language" class="Skills">
+               <img src="./All_Svg/c-1.svg" alt="C-language" class="Skills">
+               <img src="./All_Svg/java.svg" alt="Java-language" class="Skills">
+               <img src="./All_Svg/javascript.svg" alt="JavaScript-language" class="Skills">
+             </div>         
+        </div>
+        <div class="second-skill">
+               <h2> DataBase</h2>
+               <div class="skill-container">
+                    <img src="./All_Svg/mySql.svg" alt="MySql" class="Skills">
+                </div> 
+             </div>
+        <div class="third-skill">      
+                 <h2> Other</h2>
+                 <div class="skill-container">                   
+                    <img src="./All_Svg/html.svg" alt="HTML" class="Skills">
+                    <img src="./All_Svg/css.svg" alt="CSS" class="Skills">
+                    <img src="./All_Svg/git.svg" alt="Git" class="Skills">
+                    <img src="./All_Svg/express-109.svg" alt="Express" class="Skills">
+                    <img src="./All_Svg/nodeJs.svg" alt="NodeJs" class="Skills">
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------------------Project----------------->
+
+<div id="Portfolio">
+<div class="container">
+    <h1 class="sub-title">My Work </h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="images/project1.jpg" alt="#" class="img1">
+            <div class="layer">
+                <h3> Login-Authentication</h3>
+                <p>A simple login authentication system,that allows users to register, login, and access a secured page.
+                </p>
+                <a href="https://github.com/Abhijithsr13/OIBSIP/tree/main/Login-Authentication"> <i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./images/simon.jpeg" alt="#" class="img2">
+            <div class="layer">
+                <h3> Simon Game</h3>
+                <p>This electronic game tests your short-term memory and focus with a sequence of flashing lights and sounds.
+                    Remember the pattern and repeat it back flawlessly on the colored buttons to advance</p>
+                <a href="https://github.com/Abhijithsr13/Simon_game"> <i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/dog.jpg" alt="#" class="img3">
+            <div class="layer">
+                <h3> TinDog</h3>
+                <p>
+                    Unleash the power of puppy love with TinDog: Tinder for Dogs!!
+                      Landing Page</p>
+                <a href="https://github.com/Abhijithsr13/TinDog"> <i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+</div>
+</div>
+<!------------------------Contact--->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title"> Contact Me </h1>
+            <p><i class="fa-sharp fa-solid fa-paper-plane"></i>abhijithsr40@gmail.com</p>
+            <p> <i class="fa-solid fa-phone"></i>XXXXXXXXXX</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/abhijith-sr07-sr/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Abhijithsr13"><i class="fa-brands fa-github"></i></a>
+                 <a href="https://twitter.com/abhijithsr40"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <a href="" class="btn btn2">Download  Resume</a>  <!--download  to download the Resume--->  
+            </div>
+            <div class="contact-right">
+                <form  name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" rows="6"  placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit</button>
+                </form> 
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright © 2024 Abhijith SR.  All Rights Reserved </p>
+    </div>
+</div>
+
+
+<script src="index.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyM0SrVajH28Mbu_laJGswaGZLTRuN1oZAfHZUFMdH_88lZI2NjitHefuFI6ONb3dI/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully";
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

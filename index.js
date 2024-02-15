@@ -27,7 +27,7 @@ function closemenu(){
       icon.src="./All_Svg/sun.svg";
    }
    else{
-      icon.src="./All_Svg/moon.svg";
+      icon.src="./All_Svg/moon_star.svg";
    }
  }
  /*------------Animation--------------------*/

@@ -61,6 +61,10 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+#sidemenu a{
+    font-family: "DM Serif Display", serif;
+}
+
 .header-text{
     margin-top: 20px;
     font-size: 30px;
